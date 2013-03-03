@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>How to Learn a Language by zenweasel</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/zenweasel">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>How to Learn a Language</h1>
+          <p>What to know to get things done, in the shortest amount of time</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/zenweasel">zenweasel</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>Date: 2012-12-25
+Title: How to be Productive in a new language
+Tags: tools, programming, resources
+Category: Tutorials</p>
+
+<h1>How to be Productive in a new Language</h1>
+
+<h2>50,000 ft view steps</h2>
+
+<p>If applicable learn which types of applications language is targeted at. e.g. Node is not really targeted at Desktop GUI applications. Objective C not really targeted at Enterprise Web apps. Understand if you may have a round peg in a square hole, and once you have enough knowledge, say so.</p>
+
+<h3>Data Types</h3>
+
+<p><strong>Learn common data types (ones that fit well known structures, e.g. array, hashmap, etc)</strong></p>
+
+<ul>
+<li><p>Create</p></li>
+<li><p>Use</p></li>
+<li><p>Convert to other known data types</p></li>
+<li><p>Any gotchas in terms of operations on data types</p></li>
+<li>
+<p><strong>Learn specialized data types (ones specific to the language)</strong></p>
+
+<ul>
+<li>Understand the cases where these are needed/used</li>
+<li>Convert to/from common data types</li>
+</ul>
+</li>
+</ul><h3>Infrastructure</h3>
+
+<p><strong>Learn for to set up a productive development environment, and how to discover and manage code that’s already been written for you</strong></p>
+
+<ul>
+<li>Learn what package management system is available and if a sandboxed development environment is common practice. (Think rvm, virtualenv).</li>
+<li>Learn how dependencies are handled</li>
+<li>If the language has a "standard library" where that is, and how to quickly access documentation. Scan though library and see functions that you see yourself likely using and bookmark.</li>
+<li>Discover what 3rd party package are in common usage. Especially ones that provide functionality in the area you are targeting, or provide an easier-to-use wrapper around a more difficult stdlib.</li>
+<li>What build process tools are available.</li>
+</ul><h3>Language Design</h3>
+
+<p><strong>What sets this language apart from other languages, and how much does it deviate from the predominate C-syntax/Java Class inheritance paradigm.</strong> <em>(not applicable if learning C or Java)</em></p>
+
+<ul>
+<li>Which parts of OO-programming does it implement if any: Encapsulation? Polymorphism? Inheritance? If Inheritance is supported, does it support Multiple Inheritance?</li>
+<li>If it does not support a part of OO, what other methods does it use to solve those problems, if it does.</li>
+</ul><h3>Language Basics (the nitty gritty)</h3>
+
+<ul>
+<li>Typing/Comparisons.(Static/Dynamic) What implicit conversions does the language do to the different data types? What about operators? Does "2" * 12 = 24 or 2222222222222?</li>
+<li>Does it use "<a href="http://en.wikipedia.org/wiki/Duck_typing">duck typing</a>" or similar?</li>
+<li>If the language is static, how do you cast variables to different types and which types can't be cast to other types? </li>
+<li>Can you create custom types and cast common types to/from these. (e.g. create your own version of a Hashmap and cast a normal Hashmap to this)</li>
+<li>Conditionals (if/case/switch) If the language provides more than one form of if/then/else what are they?</li>
+<li>Control/Looping structures: for, while, do/while. How do you break out of a loop (if you do) when a condition is met and you do not wish to continue?</li>
+<li>How do you loop over a collection (e.g. forEach)</li>
+<li>Variable scoping: Which types of scoped variables exist, global, module, function, class, etc. How do you specify scope? <em>(this item may really deserve to be part of language design)</em> How do you move values between different scopes? Pass by value or pass by reference?</li>
+<li>What are the string functions (toLower, etc) and what formatting functions are available?</li>
+<li>How is parameter passing done? Positional, named, both, neither?</li>
+<li>Is there a constant or constants that represent "null"?</li>
+<li>Which types can be serialized (to JSON etc) and how.</li>
+<li>How does the language deal with Unicode?</li>
+<li>Does the language support closures?</li>
+<li>Does the language treat functions as first class citizens?</li>
+<li>What flavor or regex does it use and how does it differ from PCRE?</li>
+<li>Are variables mutable?</li>
+<li>How do you handle Date formatting and date math.</li>
+<li>Beyond the obvious what math operators are available and are they in the stdlib or the language itself?</li>
+<li>How do you handle discovering/using file paths? When are relative paths ok, and how do you calculate absolute paths?</li>
+</ul><h3>More advanced language topics</h3>
+
+<ul>
+<li>How do you deal with "blocking" calls? Multi-threading (Java/Python), Asynchronous event loop (Javascript)?, spawn independent processes (Erlang), other?</li>
+<li>What, if any, memory management tasks are required? How do you ensure that variables, etc. are released for GC as soon as they are no longer used?</li>
+<li>How does the language talk to Databases and other outside resources?</li>
+<li>How does the language handle inter-process communication?</li>
+<li>Does the language have an Event model? If so, how do you use it</li>
+</ul><h3>Building Programs</h3>
+
+<ul>
+<li>What is the proper way to handle exceptions</li>
+<li>What debugging tools are available to you? From print() on up. Is there an interactive debugger where you can insert breakpoints, and if so how do you set it up?</li>
+<li>If you are building a program that should execute from the command line or directly, what structure needs to be in place (e.g. main()?)</li>
+<li>Is there an accepted style guide and are there any tools to help you follow these (e.g. PEP8 and PyLint, JSLint/JSHint)</li>
+<li>What code quality tools are available that will help you catch obvious errors (if your IDE doesn't already do this for you).</li>
+<li>What logging tools are available.</li>
+<li>How do you do namespaces, or other equivalent ideas for code organization?</li>
+</ul><h2>Stage Two - Write a bunch of programs</h2>
+
+<h3>Build these programs from scratch (not counting building them during running through tutorials, etc).</h3>
+
+<p><em>(Please substitute your own name for mine)</em></p>
+
+<p>It’s important that your write these programs from scratch and not find an example and cut and paste. While you can always look up syntax, you don’t want to be doing that for the things you do 100 times an hour. Of course you will need to look things up, but try not to just copy (even by manually typing) what you find in the book.</p>
+
+<p>For some language these won’t make any sense, or they would be much more complicated than implied by the order. If so, just use your own judgement and come back to it, and just disregard it. Note that these go from very easy to very difficult, or at least more time-consuming, so expect that some of the later ones will take some time.</p>
+
+<ul>
+<li>hello world</li>
+<li>hello brent (input name)</li>
+<li>hello if brent else world</li>
+<li>hello brent printed x times</li>
+<li>hello brent with min/max on name length, and friendly error message on over/underflow.</li>
+<li>hello brent with bad input (e.g. non-alphanumeric) that outputs an error message</li>
+<li>hello brent as a function</li>
+<li>A Greeter class with a HelloBrent subclass</li>
+<li>Instead of read/write to the console, have hellobrent read values from a file and output values to different file.</li>
+<li>Build a function where one value may sometimes be a null.</li>
+<li>Build a program that reads all the files from a directory and prints out the files in a readable format.</li>
+<li>Write a program that accepts numbers input as 2,6,5,4,7,1,4 and will print them back sorted.</li>
+<li>Write a program that accepts word input as word,word,word and print them back sorted.</li>
+<li>Write an implementation of a <a href="http://en.wikipedia.org/wiki/Binary_search_tree">binary search tree</a>.</li>
+<li>Write an implementation of a <a href="http://en.wikipedia.org/wiki/Linked_list">linked list</a>.</li>
+<li>Build a program that will print the day of the week for any date in the future.</li>
+<li>Build a program that simulates the roll of two six-sided die and prints their values.</li>
+<li>Build a program that will print the fiboncacci series to infinity and never run out of memory. (maybe not possible in every language)</li>
+<li>Build a program that will parse a text file and give you the number of occurrences of a particular word.</li>
+<li>Build a program that accepts input and stores and retrieves it from a database.</li>
+<li>Write a program that will parse a CSV file and turn it into database entries.</li>
+<li>Build a simple key/value store.</li>
+<li>Write an interface for the key/value store that will check the key/value for the key, then if it doesn't exist there, retrieve from database and populate key/value (aka a cache).</li>
+<li>Build a program that will fetch a web page and tell you the title.</li>
+<li>Build a program that listens on a socket and echos back any input it receives.</li>
+<li>Build a program that will give you the word count for every word in a text file.</li>
+<li>Build a program that can run as a daemon.</li>
+<li>Build a program that will serve a "Hello World" web response from a local url.</li>
+<li>Write a simple chat server/client</li>
+<li>Write a web server that will serve the contents of a local directory.</li>
+</ul><h2>Summary</h2>
+
+<p>Having had no formal education in Computer Science, I have ready more than my fair share of “Teach Yourself 3D Graphics in 24 hours” books. Many, many of these books are a waste of time, because they don’t focus on the sort of operations that you need to do all the time. Things like string manipulation, data math, these are almost ubiquitous in every application you will write and you will do yourself a favor by becoming relatively proficent at them. Some books try to offer resources on the Internet that are available, but its just the nature of publishing that many of these will be gone or out of date, so you need to do that homework up front. I break these up because it can kill your flow Googling around for some reference when you could have captured this ahead of time at a time you weren’t in a “coding” sort of mindset.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
